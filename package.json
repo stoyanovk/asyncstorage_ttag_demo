@@ -1,0 +1,20 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "create-trans": "ttag extract  --lang uk --output i18n/uk.po ./src",
+    "po-to-json": "ttag po2json i18n/uk.po > i18n/uk.po.json",
+    "update-trans": "ttag update i18n/uk.po ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2",
+    "ttag": "^1.8.4"
+  }
+}
